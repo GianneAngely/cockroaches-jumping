@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCKROACH JUMPING FOR CARL</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gif {
+            width: 10%; /* Atur lebar sesuai kebutuhan */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ganti 'your-image-url.jpg' dengan URL gambar yang ingin kamu gunakan -->
+    <img src="cockroach.gif" alt="Gif" class="gif">
+    <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+
+    <!-- Mengulangi gambar dengan JavaScript (opsional) -->
+    <script>
+        const body = document.body;
+        for (let i = 0; i < 1000; i++) { // Jumlah pengulangan gambar
+            const img = document.createElement('img');
+            img.src = 'cockroach.gif'; // Ganti dengan URL gambar
+            img.alt = 'Gif';
+            img.className = 'gif';
+            body.appendChild(img);
+        }
+    </script>
+</body>
+</html>
